@@ -2,7 +2,7 @@
     <p class="display-3 mt-15">Here are some of the projects I have worked on.</h1>
     <div class="row row-cols-2">
         <div class="col">
-            <div class="card" style="width: 30rem;">
+            <div class="card ms-7" style="width: 30rem;">
                 <%= image_tag('chess.PNG', class: "card-img-top", alt: "Chess")%>
                 <div class="card-body">
                     <h5 class="card-title">Chess</h5>
@@ -22,25 +22,35 @@
         <div class="col">
         </div>
         <div class="col">
-            <div class="card border-light mb-3" style="max-width: 30rem;">
-                <div class="card-header">
-                    Header
-                </div>
+            <div class="card ms-5" style="width: 30rem;">
+                <%= image_tag('napos.png', class: "card-img-top", alt: "NAPOS")%>
                 <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">NAPOS POS</h5>
+                    <a class="btn btn-light" data-bs-toggle="collapse" href="#naposDesc" role="button" aria-expanded="false" aria-controls="naposDesc">
+                        <div class="dropdown-toggle text-center">
+                        </div>
+                    </a>
+                    <div class="collapse" id="naposDesc">
+                        Put Description of NAPOS here
+                    </div>
                 </div>
+                <a href="https://github.com/reece-cristea/chess" class="btn btn-primary mx-10">Github</a>
             </div>
         </div>
         <div class="col">
-            <div class="card border-light mb-3" style="max-width: 30rem;">
-                <div class="card-header">
-                    Header
-                </div>
+            <div class="card ms-7" style="width: 30rem;">
+                <%= image_tag('discord.png', class: "card-img-top", alt: "Discord Bot")%>
                 <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Discord Bot</h5>
+                    <a class="btn btn-light" data-bs-toggle="collapse" href="#discordDesc" role="button" aria-expanded="false" aria-controls="discordDesc">
+                        <div class="dropdown-toggle text-center">
+                        </div>
+                    </a>
+                    <div class="collapse" id="discordDesc">
+                        Put Description of Discord Bot here
+                    </div>
                 </div>
+                <a href="https://github.com/reece-cristea/chess" class="btn btn-primary mx-10">Github</a>
             </div>
          </div>
         <div class="col">
@@ -50,14 +60,19 @@
             
         </div>
         <div class="col">
-            <div class="card border-light mb-3" style="max-width: 30rem;">
-                <div class="card-header">
-                    Header
-                </div>
+            <div class="card ms-5" style="width: 30rem;">
+                <%= image_tag('website.png', class: "card-img-top", alt: "Chess")%>
                 <div class="card-body">
-                    <h5 class="card-title">Light card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 class="card-title">Portfolio Website</h5>
+                    <a class="btn btn-light" data-bs-toggle="collapse" href="#triviaDesc" role="button" aria-expanded="false" aria-controls="triviaDesc">
+                        <div class="dropdown-toggle text-center">
+                        </div>
+                    </a>
+                    <div class="collapse" id="triviaDesc">
+                        Put Description of Trivia App here
+                    </div>
                 </div>
+                <a href="https://github.com/reece-cristea/chess" class="btn btn-primary mx-10">Github</a>
             </div>
         </div>
     </div>
