@@ -1,3 +1,58 @@
-<div class="container vh-100 text-light">
-    <h1 class="display-1 mt-15 fade-in">Welcome!</h1>
+
+<div class="slideshow">
+    <div name="mySlides" class="text-center">
+        <div name="slideImg" class="fade-in">
+            <%= link_to image_tag('champlain1.png'), style: "width:auto;"%>
+        </div>
+        <div class="ss-text text-dark display-1">Welcome</div>
+    </div>
+    <div name="mySlides" class="text-center invis">
+        <div name="slideImg" class="fade-in">
+            <%= link_to image_tag('champlain2.png'), style: "width:auto;"%>
+        </div>
+        <div class="ss-text text-dark display-1">Welcome</div>
+    </div>
+    <div name="mySlides" class="text-center invis">
+        <div name="slideImg" class="fade-in">
+            <%= link_to image_tag('champlain3.png'), style: "width:auto;"%>
+        </div>
+        <div class="ss-text text-dark display-1">Welcome</div>
+    </div>
+    <div name="mySlides" class="text-center invis">
+        <div name="slideImg" class="fade-in">
+            <%= link_to image_tag('champlain4.jpg'), style: "width:auto;"%>
+        </div>
+        <div class="ss-text text-dark display-1">Welcome</div>
+    </div>
 </div>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByName("mySlides");
+        let slideImgs = document.getElementsByName("slideImg");
+        for (i=0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+            slides[i].className = "text-center";
+            slideImgs[i].className = "ss-fade-in";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+
+        setTimeout(setFadeOut, 4000);
+    }
+
+    function setFadeOut() {
+        let j;
+        let slideImgs = document.getElementsByName("slideImg");
+        for (j=0; j < slideImgs.length; j++) {
+            slideImgs[j].className = "ss-fade-out";
+        }
+        setTimeout(showSlides, 750)
+    }
+</script>
