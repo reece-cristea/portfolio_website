@@ -142,3 +142,7 @@
   width: 0%;
   height: 0%;
 }
+
+.no-click {
+  pointer-events: none;
+}
