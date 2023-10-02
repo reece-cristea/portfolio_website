@@ -1,60 +1,61 @@
 <div class="text-center display-1 text-dark my-5">
     Welcome!
-</div>
-<div class="row" style="width:100%">
-    <div class="col p-5">
-        <div class="display-3 text-center ms-5 mt-7">
-            Check out some of my other pages to learn more about me and feel free to contact me with any questions you have.
+</div>=
+<div class="row gx-5 gx-md-5 align-items-center mb-5" style="width:100%">
+    <div class="col-12 col-md-6">
+        <div class="display-3 text-center">
+            Check out some of my other pages to learn more about me and feel
+            free to contact me with any questions you have.
         </div>
     </div>
-    <div class="col p-5 ms-5 no-click">
-        <div class="slideshow">
+    <div class="col-12 col-md-6 text-center">
+        <div class="slideshow" style="max-width: 100%; display: inline-block;">
             <div name="mySlides">
-                <div class="border rounded border-4 border-dark" style="width:758px">
+                <div class="border rounded border-4 border-dark">
                     <div name="slideImg" class="ss-fade-in">
-                        <%= link_to image_tag('champ3.png')%>
+                        <%= image_tag('champ3.png')%>
                     </div>
                 </div>
             </div>
             <div name="mySlides" class="invis">
-                <div class="border rounded border-4 border-dark" style="width:758px">
+                <div class="border rounded border-4 border-dark">
                     <div name="slideImg" class="ss-fade-in">
-                        <%= link_to image_tag('wordcloud.jpg')%>
+                        <%= image_tag('wordcloud.jpg')%>
                     </div>
                 </div>
             </div>
             <div name="mySlides" class="invis">
-                <div class="border rounded border-4 border-dark" style="width:758px">
+                <div class="border rounded border-4 border-dark">
                     <div name="slideImg" class="ss-fade-in">
-                        <%= link_to image_tag('cce.png')%>
+                        <%= image_tag('cce.png')%>
                     </div>
                 </div>
             </div>
             <div name="mySlides" class="invis">
-                <div class="border rounded border-4 border-dark" style="width:758px">
+                <div class="border rounded border-4 border-dark">
                     <div name="slideImg" class="ss-fade-in">
-                        <%= link_to image_tag('champlain01.jpg')%>
+                        <%= image_tag('champlain01.jpg')%>
                     </div>
                 </div>
             </div>
             <div name="mySlides" class="invis">
-                <div class="border rounded border-4 border-dark" style="width:758px">
+                <div class="border rounded border-4 border-dark">
                     <div name="slideImg" class="ss-fade-in">
-                        <%= link_to image_tag('japan.jpg')%>
+                        <%= image_tag('japan.jpg')%>
                     </div>
                 </div>
             </div>
             <div name="mySlides" class="invis">
-                <div class="border rounded border-4 border-dark" style="width:758px">
+                <div class="border rounded border-4 border-dark">
                     <div name="slideImg" class="ss-fade-in">
-                        <%= link_to image_tag('champlain02.jpg')%>
+                        <%= image_tag('champlain02.jpg')%>
                     </div>
                 </div>
             </div>
             <div name="mySlides" class="text-center invis">
-                <div class="border rounded border-4 border-dark" style="width:758px">
+                <div class="border rounded border-4 border-dark">
                     <div name="slideImg" class="ss-fade-in">
-                        <%= link_to image_tag('spotify.png')%>
+                        <%= image_tag('spotify.png')%>
                     </div>
                 </div>
             </div>
@@ -62,7 +63,7 @@
     </div>
 </div>
 <script>
-    window.onload = function() {
+    window.onload = function () {
         showSlides(0);
     };
 
@@ -71,7 +72,7 @@
         let i;
         let slides = document.getElementsByName("mySlides");
         let slideImgs = document.getElementsByName("slideImg");
-        for (i=0; i < slides.length; i++) {
+        for (i = 0; i < slides.length; i++) {
             slides[i].className = "invis";
             slideImgs[i].className = "ss-fade-in";
         }
@@ -81,7 +82,7 @@
         }
         slides[slideIndex - 1].className = "";
 
-        setTimeout(function() {
+        setTimeout(function () {
             setFadeOut(slideIndex);
         }, 4000);
     }
@@ -90,22 +91,22 @@
         let slideIndex = index;
         let j;
         let slideImgs = document.getElementsByName("slideImg");
-        for (j=0; j < slideImgs.length; j++) {
+        for (j = 0; j < slideImgs.length; j++) {
             slideImgs[j].className = "ss-fade-out";
         }
-        if (slideImgs.length == 0){
+        if (slideImgs.length == 0) {
             waitForHomePage(slideIndex);
         } else {
-            setTimeout(function() {
+            setTimeout(function () {
                 showSlides(slideIndex);
             }, 750);
         }
     }
-    function waitForHomePage(index){
+    function waitForHomePage(index) {
         let slideIndex = index;
         let slideImgs = document.getElementsByName("slideImg");
-        if (slideImgs.length == 0){
-            setTimeout(function() {
+        if (slideImgs.length == 0) {
+            setTimeout(function () {
                 waitForHomePage(slideIndex);
             }, 4000);
         } else {
