@@ -1,54 +1,100 @@
-<div class="about-body mt-5 fade-in">
+<div class="about-body my-5 fade-in">
     <section class="banner my-5">
         <%= image_tag('reece.jpg', class: "rounded-3 shadow-lg banner-img", alt: "Reece Cristea")%>
         <div class="banner-content">
             <h2>Hi, I'm Reece!</h2>
-            <p>
-                I am an entry level software engineer/developer looking to get some hands-on experience in the field.
-            </p>
-            <p>
+            <p style="max-width: 780px;">
+                I am an entry level software engineer/developer looking to get some hands-on experience in the field. 
                 I specialize in front end application development, but I welcome all challenges that any project will pose.
             </p>
-            <div class="row text-center mt-5">
-                <div class="col">
-                    <div class="dropdown-card">
-                        <a class="text-dark" data-bs-toggle="collapse" href="#education-collapse" role="button" aria-expanded="false" aria-controls="education-collapse">
-                            <h2>Education</h2>
-                        </a>
+            <div class="accordion mt-3" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Education
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            I graduated from <i>Champlain College</i> in Burlington, Vermont with a <strong> major in Computer Science and Innovation and a minor in Mathematics</strong>.
+                            My cirriculum had me learning the foundations of programming from the very first semester and continued to advance my knowledge and skills to the point where
+                            I was able to build my own application or website for any platform at the end of my senior year. Although I don't know everything there is to know about proramming,
+                            my time at school taught me so much on what it means to develop software. Below are some of the more notable courses I completed while at Champlain College:
+                        </div>
+                        <div class="row mx-3 mb-3">
+                            <div class="col text-start">
+                                <li><em>Intro to Mobile and Web Development</em></li>
+                                <li><em>Data Structures and Algorithms</em></li>
+                                <li><em>Open Source Software Development</em></li>
+                                <li><em>Network Programming</em></li>
+                                <li><em>Database Management and Systems</em></li>
+                                <li><em>Linux/Unix Programming</em></li>
+                            </div>
+                            <div class="col text-start">
+                                <li><em>Computer Architecture</em></li>
+                                <li><em>Android Development</em></li>
+                                <li><em>Advanced Programming</em></li>
+                                <li><em>Emerging Programming Languages</em></li>
+                                <li><em>Software Refactoring</em></li>
+                                <li><em>Vector Calculus</em></li>
+                                <li><em>Matrices, Vectors, and 3D Math</em></li>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="dropdown-card">
-                        <a class="text-dark" data-bs-toggle="collapse" href="#technologies-collapse" role="button" aria-expanded="false" aria-controls="technologies-collapse">
-                            <h2>Technologies</h2>
-                        </a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Technologies
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" style="display: table;">
+                            During all of my schooling and across all of my projects I have completed, I have learned about and used a multitude of various different programming 
+                            languages and tools. I'm not really an expert in any of them, but I do have a very good understanding of most of them and I'm able to use them in a 
+                            professional setting. I can also adapt super quickly to any programming language and be able to use it well within a few weeks because I have learned 
+                            about the different programming language paradigms and their characteristics. That being said, below are a list of technologies I'm comfortable with:
+                        </div>
+                        <div class="row mx-3 mb-3">
+                            <div class="col text-start">
+                                <li><em>HTML5</em></li>
+                                <li><em>CSS3</em></li>
+                                <li><em>JavaScript</em></li>
+                                <li><em>Bootstrap</em></li>
+                                <li><em>Ruby On Rails</em></li>
+                                <li><em>SQL</em></li>
+                            </div>
+                            <div class="col text-start">
+                                <li><em>C#</em></li>
+                                <li><em>C++</em></li>
+                                <li><em>Python</em></li>
+                                <li><em>Java</em></li>
+                                <li><em>Dart</em></li>
+                                <li><em>Flutter SDK</em></li>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="dropdown-card">
-                        <a class="text-dark" data-bs-toggle="collapse" href="#hobbies-collapse" role="button" aria-expanded="false" aria-controls="hobbies-collapse">
-                            <h2>Hobbies</h2>
-                        </a>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Hobbies
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Some of my interests, aside from computer science, include video games, cars, Japanese culture, working out, and music. During my time in college, I played 
+                            for three different varsity esports teams (Overwatch, Valorant, and Rocket League). This experience provided me with a deep understanding of teamwork and 
+                            emphasized the crucial role of communication in achieving success. Additionally, I have been casually studying Japanese for a year now and can engage in 
+                            conversations on basic topics. Music plays a significant role in my life, and I enjoy listening to it during various activities such as working out, 
+                            playing games, working on projects, driving, and even while sleeping at times. Looking ahead, my ultimate career goal is to work as a front-end developer 
+                            at Spotify. I am passionate about their platform and believe I can contribute by implementing improvements and adding exciting features.
+                        </div>
                     </div>
-                </div>
-               <div class="mt-3">
-                <div class="collapse" id="education-collapse">
-                    <div class="card card-body">
-                        Education
-                    </div>
-                </div>
-                <div class="collapse" id="technologies-collapse">
-                    <div class="card card-body">
-                        Technologies
-                    </div>
-                </div>
-                <div class="collapse" id="hobbies-collapse">
-                    <div class="card card-body">
-                        Hobbies
-                    </div>
-                </div>
                 </div>
             </div>
         </div>
     </section>
+    <div style="height:200px">
+    </div>
 </div>
